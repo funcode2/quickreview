@@ -1,0 +1,12 @@
+1. df   (show disk space and system partition information)
+   -h   show disk space in human readable format. G / M / K
+   -T   show file system type. ext4, tmpfs, etc.
+   -t   show specific file type. like a filter. e.x.: df -t ext4
+   -x   exclude specific file type.
+
+2. du  (check file and directory on disk)
+   -s   show summary of the total disk usage size of an dirctory
+   -h   show directory size in human readable format
+
+
+
