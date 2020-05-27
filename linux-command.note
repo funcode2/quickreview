@@ -8,5 +8,9 @@
    -s   show summary of the total disk usage size of an dirctory
    -h   show directory size in human readable format
 
-
-
+3. umount (solution for issue of device busy)
+   umount /mnt/data/mymountedfolder    // can't unmount /mnt/data/mymountedfolder: Device or resource busy
+   To force umount, use command fuser to check what process is tied on the device
+   fuser -m /mnt/data/mymountedfolder
+   3389
+   The process number will be returned. Use kill command to stop the process, do umount again, it should work
