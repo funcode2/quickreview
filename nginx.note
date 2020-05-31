@@ -1,0 +1,19 @@
+Note for Nginx
+
+1. Installation
+    wget https://nginx.org/download/nginx-1.17.9.tar.gz
+    tar zxf nginx-1.17.9.tar.gz
+    cd nginx-1.17.9
+    ./configure
+    sudo make && make install
+
+2. Install dependancy
+    wget ftp://ftp.pcre.org/pub/pcre/pcre-8.44.tar.bz2 
+    wget http://zlib.net/zlib-1.2.11.tar.gz
+    wget http://www.openssl.org/source/openssl-1.1.1d.tar.gz
+
+    unzip and build
+    ./configure
+    make && sudo make install
+
+/* all resources are in /myRepo */
