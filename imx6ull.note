@@ -1,0 +1,57 @@
+1. Env01_all_series_quickstart
+2. 100ask_imx6ull_2020.01.10_v1
+
+3. Follow up 100ask_imx6ull
+
+4. git clone 01_all_series_quickstart	// follow up for the update
+
+git clone https://e.coding.net/weidongshan/01_all_series_quickstart.git 
+
+git pull origin 
+
+git remote show origin
+
+git log
+
+5. BSP
+100ask_imx6ull_2020.02.29_v2.0
+100ask_imx6ull-qemu
+
+6. Video https://www.100ask.net/
+
+http://wiki.100ask.org/Download
+《第三篇 Linux 基本操作与开发工具使用》 
+《第四篇 韦东山升级版嵌入式全系列视频介绍及资料下载》 
+《第六篇 嵌入式 Linux 应用开发基础知识》 
+《第七篇 嵌入式 Linux 驱动开发基础知识》
+
+7. 2.1.2 安装 Windows 软件 选择、安装好虚拟机后，就要在 Windows 安装各种开发软件了。 软件名 说明 Source insight 阅读、编写源码的工具，即装即用；推荐初学者使用 Visual Studio Code 阅读、编写源码的工具，需要进行很多配置；不推荐初学者使用 MobaXterm 串口工具、远程登录工具 Filezilla 文件传输工具，在 Windows 和 Ubuntu 之间传输文件 Notepad++ 文本编辑工具，比记事本好用 在“网盘 BSP 包\01_Tools (工具)\01_Tools.zip”中
+
+8. VMware installation workstation player 15
+VMwareworkstation-full-15.1.0-13591040.exe
+
+解压“网盘 BSP 包\01_Tools (工具)\100ask-vmware_Ubuntu18.04.7z”，它是 Ubuntu 映像文件
+
+9. Configure network
+NAT mode.
+Run vmnetcfg	to map port 22, 111, 2049, 9999
+
+① 修改/etc/services： 添加 2 行： mountd   9999/tcp mountd   9999/udp 
+② NFS 重启： sudo  /etc/init.d/nfs-kernel-server  restart 
+③ 查看端口： sudo  rpcinfo  -p 
+
+10. Configure Ubuntu
+book@100ask: ~ $ wget --no-check-certificate -O Configuring_ubuntu.sh https://weidongshan.coding.net/p/DevelopmentEnvConf/d/DevelopmentEnvConf/git/raw/master/Co nfiguring_ubuntu.sh &&  sudo chmod +x Configuring_ubuntu.sh &&  sudo ./Configuring_ubuntu.sh
+
+按提示输入 book 密码 123456 和选择对应的系统
+
+To work in root mode
+sudo passwd root
+su root
+
+11. route command. https://akaedu.github.io/book/ch36s05.html
+
+
+
+
+

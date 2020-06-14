@@ -1,0 +1,47 @@
+https://github.com/GENIVI/capicxx-dbus-tools/wiki/CommonAPI-C---D-Bus-in-10-minutes
+
+Note on the build process:
+
+1. Java env	version 1.8.xxx
+
+2. dbus-1.10.10
+
+3. cgen binary
+	commonapi-generator.zip   		3.1.12.4  (https://github.com/GENIVI/capicxx-core-tools/releases/)
+	commonapi_dbus_generator.zip 3.1.12.2 (https://github.com/GENIVI/capicxx-dbus-tools/releases)
+ 
+4. CMakeFile.txt for client and service
+	Before run the build, the env param must be set:
+	export RUNTIME_PATH="/home/book/project/commonapi/"
+	export DBUS_PATH="/home/book/project/dbus-1.10.10/
+
+Appendix A:
+http://genivi.github.io/capicxx-core-tools/
+https://at.projects.genivi.org/wiki/pages/viewpage.action?pageId=5472316
+
+
+Appendix B:
+manage multiple Java versions
+The java package can be put into /usr/lib/jvm
+
+$update-alternatives --config java
+
+Appendix C:
+
+Set passwd for root
+
+lichengbei@ubuntu1804:~$ sudo passwd root
+
+[sudo] password for lichengbei: {1234.qwer}
+
+Enter new UNIX password: {1234.qwer}
+
+Retype new UNIX password: {1234.qwer}
+
+passwd: password updated successfully
+
+lichengbei@ubuntu1804:~$ su
+
+Password: {1234.qwer}
+
+root@ubuntu1804:~#

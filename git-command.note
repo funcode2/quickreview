@@ -1,0 +1,8 @@
+
+
+https://blog.tinned-software.net/manage-ssh-keys-with-the-ssh-agent/
+
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa	
+ssh-add -l		// list the ssh agent
+ssh-add -D 		// delete the ssh agent
